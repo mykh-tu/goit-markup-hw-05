@@ -73,8 +73,9 @@ color: #404bbf
 
 .header-nav-link.current::after {
 
-    position: relative;
-padding: 24px 0px;
+    position: absolute;
+left: 357px;
+    bottom: 812px;
 content: "";
 display: block;
 width: 65px;
