@@ -75,7 +75,7 @@ gap: 24px;
 .team-icon {
     fill: currentColor;
 }
-.social-link:hover, social-link:focus {
+.social-link:hover, .social-link:focus {
 background: #404bbf;
 border-radius: 40px;
 }

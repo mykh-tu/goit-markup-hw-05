@@ -43,6 +43,7 @@ color: #f4f4fd;
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
+        gap: 16px;
     width: 208px;
     height: 80px;
     margin-left: 120px;
@@ -55,7 +56,6 @@ color: #f4f4fd;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #fff;
-        margin-bottom: 16px;
 }
 
 .social-item {
@@ -76,7 +76,6 @@ color: #f4f4fd;
 
 .footer .social-link:hover, .footer .social-link:focus {
     background: #31d0aa;
-    border-radius: 20px;
 }
 
 .social-link {
