@@ -49,7 +49,7 @@
                 <h1 class="hero-title">
                     Effective Solutions for&nbsp;Your Business</h1>
             <div class="hero-controls">
-                <button class="hero-btn" type="button">Order Service</button>
+                <button class="hero-btn" type="button" id="openModal">Order Service</button>
             </div>
             </div>
         </div>
@@ -377,11 +377,130 @@
                                 </svg></a>
                                 </li>
                     </ul>
-            </div>
+                </div>
         </div>
+        <form class="footer-form" name="subscriptionForm">
+           <div class="footer-form-subscribe">
+            <p class="footer-title">Subscribe</p>
+           
+            <ul class="form-list">
+                <li class="form-element">
+            <label class="footer-form-wrapper">
+                <input class="footer-form-field" 
+                type="email" 
+                name="userSubscription"
+                placeholder="E-mail"
+                onfocus="this.placeholder='example@mail.com'"
+                >
+            </label>
+            </li>
+
+            <li class="form-element">
+            <button class="footer-form-btn" type="submit">Subscribe
+            <svg class="subscribe-icon" width="24" height="24">
+                <use class="subscribe-btn" href="./images/icons.svg#icon-subscribe-btn"></use>
+            </svg>
+            </button>
+            </li>
+            </ul>
+            </div>
+        </form>
+        
         </div>
         </div>
 </footer>
+
+<div class="backdrop">
+    <div class="modal">
+        <button class="modal-btn" type="button">
+            <svg class="modal-btn-icon" width="28" height="28">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <p class="modal-caption">Leave your contacts and we will call you back</p>
+
+        <form class="modal-form" name="reviewForm" autocomplete="on">
+
+            <div class="modal-form-field">
+                <label class="modal-form-label" for="userName">Name</label>
+                <div class="modal-form-wrapper">
+                    <input class="modal-form-input" 
+                    type="text" 
+                    name="userName" 
+                    id="userName"
+                    required
+                    minlength="2"
+                    pattern="/^[a-zA-Z]+\s[a-zA-Z]+$/gm"
+                    title="Name must be two words separated by space in latin"/>
+                    <svg class="modal-form-icon" width="18" height="24">
+                        <use href="./images/icons.svg#name-icon"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-form-field">
+                <label class="modal-form-label" for="userPhone">Phone</label>
+                <div class="modal-form-wrapper">
+                    <input class="modal-form-input" type="tel" name="userPhone" id="userPhone" />
+                    <svg class="modal-form-icon" width="18" height="24">
+                        <use href="./images/icons.svg#phone-icon"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-form-field">
+                <label class="modal-form-label" for="userEmail">Email</label>
+                <div class="modal-form-wrapper">
+                    <input class="modal-form-input" 
+                    type="email" 
+                    name="userEmail" 
+                    id="userEmail"
+                    required />
+                    <svg class="modal-form-icon" width="18" height="24">
+                        <use href="./images/icons.svg#mail-icon"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-form-field">
+                <label class="modal-form-label" for="userComment">Comment</label>
+                <textarea 
+                class="modal-form-comment" 
+                rows="5" name="comment" 
+                id="userComment"
+                placeholder="Text input"
+                required
+                minlength="20"
+                maxlength="1000"></textarea>
+            </div>
+
+            <div class="modal-form-agreement">
+                <input 
+                class="checkbox sr-only" 
+                type="checkbox"
+                id="userAgreement"
+                name="userAgreement"
+                value="true"
+                checked/>
+                <label class="modal-form-agreement-wrapper" for="userAgreement">
+                    <span class="modal-form-agreement-checkbox">
+                        <svg class="modal-form-agreement-icon" width="14" height="14">
+                            <use href="./images/icons.svg#icon-check-mark"></use>
+                        </svg>
+                    </span>
+                    <span>
+                    I accept the terms and conditions of the 
+                    <a
+                    class="modal-form-agreement-link"
+                    href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                    </span>
+                </label>
+            </div>
+            <div class="button-wrap"><button class="modal-form-btn" type="submit">Send</button></div>
+        </form>
+    </div>
+</div>
 </body>
 </html>
 
