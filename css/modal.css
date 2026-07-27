@@ -68,13 +68,10 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
     width: 24px;
     height: 24px;
 
-    transition: background-color, fill 250ms cubic-bezier(0.4,
+    transition: background-color 250ms cubic-bezier(0.4,
         0,
         0.2,
-        1), fill 250ms cubic-bezier(0.4,
-                0,
-                0.2,
-                1);
+        1), 
 }
 
 .modal-btn:hover,
@@ -82,11 +79,20 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
     background-color: #404bbf;
 }
 
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
+    fill: #fff;
+}
+
 .modal-btn-icon {
     stroke: currentColor;
     width: 8px;
     height: 8px;
     fill: #2e2f42
+    transition: fill 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
 }
 
 .modal-btn-icon:hover, 
@@ -111,7 +117,7 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
         font-family: "Roboto", sans-serif;
     font-weight: 400;
         font-size: 12px;
-        line-height: 1.16667;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
         margin-bottom: 4px;
@@ -135,15 +141,16 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
 border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
         padding: 8px 38px;
-        width: 360px;
+        width: 343px;
         height: 40px;
         max-width: 360px;
         min-height: 40px;
         outline: none;
-        transition: border 250ms cubic-bezier(0.4,
+        transition: border-color 250ms cubic-bezier(0.4,
             0,
             0.2,
             1)
+    backgroung-color: #fcfcfc
 }
 
 .modal-form-input:focus {
@@ -154,10 +161,13 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
         padding: 8px 16px;
-        width: 360px;
+        width: 343px;
         height: 120px;
+        max-width: 360px;
         outline: none;
         resize: none;
+
+        background-color: #fcfcfc;
 
         font-weight: 400;
             font-size: 12px;
@@ -179,7 +189,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     position: absolute;
     top: 8px;
     left: 16px;
-    stroke: #2e2f42;
+    fill: #2e2f42;
     
     transition: fill 250ms cubic-bezier(0.4,
         0,
@@ -282,7 +292,7 @@ border-radius: 2px;
 }
 
 .modal-form-agreement-link {
-    line-height: 1.33;
+    line-height: 1.17;
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: #4d5ae5;

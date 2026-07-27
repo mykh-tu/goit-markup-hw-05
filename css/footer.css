@@ -56,7 +56,7 @@ color: #f4f4fd;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #fff;
-        margin-bottom: 16px;
+      
 }
 
 .social-item {
@@ -148,12 +148,11 @@ display: flex;
 
     border:none;
     background-color: #4d5ae5;
-
+    gap:16px;
 
     display: inline-flex;
         align-items: flex-start;
         justify-content: flex-start;
-    gap: 16px;
 
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4,
@@ -174,6 +173,7 @@ border: 1px solid #31D0AA;
         justify-content: flex-start;
         flex-direction: column;
                 margin-left: 83px;
+                gap: 16px;
 }
 
 .form-list {
