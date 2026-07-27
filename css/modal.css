@@ -71,7 +71,7 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
     transition: background-color 250ms cubic-bezier(0.4,
         0,
         0.2,
-        1), 
+        1);
 }
 
 .modal-btn:hover,
@@ -88,7 +88,7 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
     stroke: currentColor;
     width: 8px;
     height: 8px;
-    fill: #2e2f42
+    fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4,
             0,
             0.2,
@@ -128,29 +128,28 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
-
-        width: 360px;
-            height: 58px;
+        width: 100%;
+        height: 100%;
 }
 
 .modal-form-field {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .modal-form-input {
 border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
         padding: 8px 38px;
-        width: 343px;
         height: 40px;
+        width: 360px;
         max-width: 360px;
         min-height: 40px;
         outline: none;
         transition: border-color 250ms cubic-bezier(0.4,
             0,
             0.2,
-            1)
-    backgroung-color: #fcfcfc
+            1);
+    backgroung-color: #fcfcfc;
 }
 
 .modal-form-input:focus {
@@ -161,8 +160,8 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
         padding: 8px 16px;
-        width: 343px;
         height: 120px;
+        width: 360px;
         max-width: 360px;
         outline: none;
         resize: none;
@@ -187,7 +186,8 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 
 .modal-form-icon {
     position: absolute;
-    top: 8px;
+    top: 50%;
+    transform: translateY (-50%);
     left: 16px;
     fill: #2e2f42;
     
@@ -274,7 +274,13 @@ fill: #4d5ae5;
 
         cursor: pointer;
 
-        transition: background-color, border-color, color 250ms cubic-bezier(0.4,
+        transition: background-color 250ms cubic-bezier(0.4,
+                0,
+                0.2,
+                1), border-color 250ms cubic-bezier(0.4,
+                        0,
+                        0.2,
+                        1), color 250ms cubic-bezier(0.4,
                     0,
                     0.2,
                     1);
