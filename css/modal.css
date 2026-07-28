@@ -133,7 +133,7 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
 }
 
 .modal-form-field {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .modal-form-input {
@@ -228,7 +228,7 @@ fill: #4d5ae5;
         0.2,
         1);
         cursor: pointer;
-        border-color: #4d5ae5;    
+        border: none;
 }
 
 .modal-form-btn:hover, .modal-form-btn:focus {
@@ -261,7 +261,7 @@ fill: #4d5ae5;
 .modal-form-agreement-checkbox {
     border-radius: 2px;
         fill: #404bbf;
-        border: 0.88px solid rgba(46, 47, 66, 0.4);
+        border: 1px solid rgba(46, 47, 66, 0.4);
         color: transparent;
 
         width: 16px;
@@ -289,7 +289,7 @@ fill: #4d5ae5;
 .checkbox:checked + .modal-form-agreement-wrapper > .modal-form-agreement-checkbox {
 border-radius: 2px;
     background-color: #404bbf;
-    border: 0.88px solid #404bbf;
+    border: 1px solid #404bbf;
     color: #f4f4fd;
 }
 
