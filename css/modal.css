@@ -30,9 +30,9 @@ top: 50%;
 left: 50%;
 transform: translateX(-50%) translateY(-70%);
 opacity: 0;
-
+min-height: 582px;
 width: 408px;
-height: 582px;
+
 padding: 72px 24px 24px;
 transition: 250ms cubic-bezier(.4,
     0,
@@ -149,7 +149,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
             0,
             0.2,
             1);
-    backgroung-color: #fcfcfc;
+    background-color: #fcfcfc;
 }
 
 .modal-form-input:focus {
@@ -187,7 +187,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 .modal-form-icon {
     position: absolute;
     top: 50%;
-    transform: translateY (-50%);
+    transform: translateY(-50%);
     left: 16px;
     fill: #2e2f42;
     
