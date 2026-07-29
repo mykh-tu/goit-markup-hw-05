@@ -89,9 +89,7 @@ color: #f4f4fd;
 
 .socialicon {} 
 
-.footer-icon {
-        fill: currentColor;
-}
+.footer-icon {}
 
 .footer-form {
 display: flex;
