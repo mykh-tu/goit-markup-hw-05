@@ -136,6 +136,10 @@ box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 
     margin-bottom: 8px;
 }
 
+.modal-form-text {
+        margin-bottom: 16px;
+}
+
 .modal-form-input {
 border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
